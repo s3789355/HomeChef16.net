@@ -1,8 +1,10 @@
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const About = () => {
+  const [isShow, setIsShow] = useState(false);
   return (
     <>
       <div className="smoothies-beverage-landing-p">
@@ -17,21 +19,24 @@ const About = () => {
           </div>
           {/* <img className="bowl-icon" alt="bowl" src="./img/bowl.svg" /> */}
           <div className="header-div" id="nav-bar">
-            <span className="recipes-a">Recipes</span>
-            <a className="home-a" href="#home">
+            <span className="recipes-a" onClick={() => setIsShow(true)}>
+              Recipes
+            </span>
+            <Link className="home-a" to="/">
               Home
-            </a>
-            <div className="selector-div" />
-            <a className="tips-tricks" href="#tipsntricks">
+            </Link>
+
+            <Link className="tips-tricks" to="/healthy-eating">
               Tips &amp; Tricks
-            </a>
-            <a className="login-a" href="#login">
-              Login
-            </a>
-            <a className="button-a" href="#contact">
-              <div className="bg-div" />
+            </Link>
+
+            <Link className="login-a" to="/about">
+              About
+              <div className="selector-div" />
+            </Link>
+            <Link className="button-a" to="/contact">
               <div className="contact-us-div">Contact Us</div>
-            </a>
+            </Link>
           </div>
           <img className="content-icon" alt src="./img/content.svg" />
           <p className="title-home-f">HOMECHEF16.NET</p>

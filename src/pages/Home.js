@@ -2,9 +2,15 @@ import Header from "../component/Header";
 import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [isShow, setIsShow] = useState(false);
+
+  const handleRedirect = () => {
+    navigate("/detail", { replace: true });
+  };
 
   return (
     <>
@@ -76,20 +82,22 @@ const Home = () => {
             <span className="recipes-a" onClick={() => setIsShow(true)}>
               Recipes
             </span>
-            <a className="home-a" href="#home">
+            <Link className="home-a" to="/">
               Home
-            </a>
+            </Link>
             <div className="selector-div" />
-            <a className="tips-tricks" href="#tipsntricks">
+
+            <Link className="tips-tricks" to="/healthy-eating">
               Tips &amp; Tricks
-            </a>
-            <a className="login-a" href="#login">
-              Login
-            </a>
-            <a className="button-a" href="#contact">
+            </Link>
+
+            <Link className="login-a" to="/about">
+              About
+            </Link>
+            <Link className="button-a" to="/contact">
               <div className="bg-div" />
               <div className="contact-us-div">Contact Us</div>
-            </a>
+            </Link>
           </div>
           <img className="content-icon" alt src="./img/content.svg" />
           <p className="title-home-f">HOMECHEF16.NET</p>
@@ -184,36 +192,42 @@ const Home = () => {
           Popular Recipes This Week
         </h3>
         <img
+          onClick={handleRedirect}
           className="rectangle-icon"
           alt
           src="./img/rectangle-1842.svg"
           id="rectangleImage"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon1"
           alt
           src="./img/rectangle-1843.svg"
           id="rectangleImage1"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon2"
           alt
           src="./img/rectangle-1844.svg"
           id="rectangleImage2"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon3"
           alt
           src="./img/rectangle-1845.svg"
           id="rectangleImage3"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon4"
           alt
           src="./img/rectangle-1846.svg"
           id="rectangleImage4"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon5"
           alt
           src="./img/rectangle-1847.svg"
@@ -241,36 +255,42 @@ const Home = () => {
           <p className="covered-rolls-p">Nachos</p>
         </b>
         <img
+          onClick={handleRedirect}
           className="rectangle-icon6"
           alt
           src="./img/rectangle-1848.svg"
           id="rectangleImage6"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon7"
           alt
           src="./img/rectangle-1849.svg"
           id="rectangleImage7"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon8"
           alt
           src="./img/rectangle-1850.svg"
           id="rectangleImage8"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon9"
           alt
           src="./img/rectangle-1851.svg"
           id="rectangleImage9"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon10"
           alt
           src="./img/rectangle-1852.svg"
           id="rectangleImage10"
         />
         <img
+          onClick={handleRedirect}
           className="rectangle-icon11"
           alt
           src="./img/rectangle-1853@2x.png"

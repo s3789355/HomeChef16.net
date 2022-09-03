@@ -1,7 +1,7 @@
 const HealthyEating = () => {
   return (
     <div className="bg">
-      <div className="main">
+      <div style={{ padding: "0 40px" }}>
         <div className="header">
           <div className="header-search">
             <input

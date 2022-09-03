@@ -1,7 +1,6 @@
 import { Navigate, useRoutes } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Read from "./pages/Read";
 import Search from "./pages/Search";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
