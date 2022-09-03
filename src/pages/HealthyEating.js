@@ -1,3 +1,5 @@
+import Footer from "../component/Footer";
+
 const HealthyEating = () => {
   return (
     <div className="bg">
@@ -24,12 +26,7 @@ const HealthyEating = () => {
         </div>
         <div className="main-title">Healthy Eating</div>
         <p className="main-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged
+        Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.
         </p>
 
         <div className="intro">
@@ -76,6 +73,7 @@ const HealthyEating = () => {
         </div>
         <div className="btn-show-more">Show more</div>
       </div>
+      <Footer />
     </div>
   );
 };
