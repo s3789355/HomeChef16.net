@@ -1,13 +1,69 @@
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Home = () => {
+  const [isShow, setIsShow] = useState(false);
+
   return (
     <>
       <div className="smoothies-beverage-landing-p">
         <img className="vector-icon" alt="background" src="./img/vector.svg" />
         <img className="ellipse-icon" alt src="./img/ellipse-37.svg" />
+        {isShow && (
+          <>
+            <div className="menu-tran" onClick={() => setIsShow(false)}></div>
+            <div className="menu">
+              <div className="item__menu">
+                <ul className="item__child">
+                  <li>Popular</li>
+                  <li>Easy Dinner</li>
+                  <li>Work Lunches</li>
+                  <li>Easy Dinner</li>
+                  <li>Easy Dinner</li>
+                </ul>
+              </div>
+              <div className="item__menu">
+                <ul className="item__child">
+                  <li>Right Now</li>
+                  <li>Easy Dinner</li>
+                  <li>Work Lunches</li>
+                  <li>Easy Dinner</li>
+                  <li>Easy Dinner</li>
+                </ul>
+              </div>
+              <div className="item__menu">
+                <ul className="item__child">
+                  <li>Ingredients</li>
+                  <li>Easy Dinner</li>
+                  <li>Work Lunches</li>
+                  <li>Easy Dinner</li>
+                  <li>Easy Dinner</li>
+                </ul>
+              </div>
+              <div className="item__menu">
+                <ul className="item__child">
+                  <li>Diet</li>
+                  <li>Easy Dinner</li>
+                  <li>Work Lunches</li>
+                  <li>Easy Dinner</li>
+                  <li>Easy Dinner</li>
+                </ul>
+              </div>
+              <div className="item__menu">
+                <ul className="item__child">
+                  <li>Meals</li>
+                  <li>Easy Dinner</li>
+                  <li>Work Lunches</li>
+                  <li>Easy Dinner</li>
+                  <li>Easy Dinner</li>
+                </ul>
+              </div>
+            </div>
+          </>
+        )}
+
         <header className="hero-image-header" id="head-container">
           <img className="image-54-icon" alt="berry" src="./img/image-54.svg" />
           <img className="vector-icon1" alt src="./img/vector1.svg" />
@@ -17,9 +73,9 @@ const Home = () => {
           </div>
           <img className="bowl-icon" alt="bowl" src="./img/bowl.svg" />
           <div className="header-div" id="nav-bar">
-            <a className="recipes-a" href="@recipes">
+            <span className="recipes-a" onClick={() => setIsShow(true)}>
               Recipes
-            </a>
+            </span>
             <a className="home-a" href="#home">
               Home
             </a>
@@ -36,6 +92,7 @@ const Home = () => {
             </a>
           </div>
           <img className="content-icon" alt src="./img/content.svg" />
+          <p className="title-home-f">HOMECHEF16.NET</p>
           <div className="benefits-div">
             <img
               className="verticle-line-icon"

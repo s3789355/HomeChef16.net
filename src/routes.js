@@ -3,6 +3,10 @@ import { Navigate, useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 import Read from "./pages/Read";
 import Search from "./pages/Search";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import HealthyEating from "./pages/HealthyEating";
+import Detail from "./pages/Detail";
 
 export default function Router() {
   return useRoutes([
@@ -11,12 +15,20 @@ export default function Router() {
       element: <Home />,
     },
     {
-      path: "/tim-kiem",
-      element: <Search />,
+      path: "/contact",
+      element: <Contact />,
     },
     {
-      path: "/read/:id",
-      element: <Read />,
+      path: "/about",
+      element: <About />,
+    },
+    {
+      path: "/healthy-eating",
+      element: <HealthyEating />,
+    },
+    {
+      path: "/detail",
+      element: <Detail />,
     },
     { path: "*", element: <Navigate to="/404" replace /> },
   ]);
