@@ -253,6 +253,7 @@ const Detail = () => {
           <div className="btn-show-more font-17">Show more</div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

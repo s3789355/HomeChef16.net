@@ -45,7 +45,7 @@ const Footer = () => {
           />
           <strong className="send-feedback-privacy-policy">
             <p className="send-feedback-p">Send feedback</p>
-            <p className="send-feedback-p"> Privacy Policy</p>
+            <p className="send-feedback-p">Privacy Policy</p>
             <p className="send-feedback-p" />
             <p className="send-feedback-p">User Agreement</p>
             <p className="send-feedback-p">&nbsp;</p>

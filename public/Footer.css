@@ -135,14 +135,14 @@ body {
     border-radius: 20px;
     width: 196px;
     height: 56px;
-    background-image: url(./public/rectangle-1840@3x.png);
+    background-image: url(./img/rectangle-1840@3x.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
   }
   .rectangle-a1 {
     left: 1364px;
-    background-image: url(./public/rectangle-1841@3x.png);
+    background-image: url(./img/rectangle-1841@3x.png);
   }
   .content-icon1 {
     position: absolute;

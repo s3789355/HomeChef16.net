@@ -1,4 +1,5 @@
 import Footer from "../component/Footer";
+import { Link } from "react-router-dom";
 
 const HealthyEating = () => {
   return (
@@ -15,12 +16,26 @@ const HealthyEating = () => {
           <div className="header-menu">
             <ul className="list-menu">
               <li className="item-menu">
-                Home
+                <Link className="line" to="/">
+                  Home
+                </Link>
                 <div className="selector-div"></div>
               </li>
-              <li className="item-menu">Recipes</li>
-              <li className="item-menu">Tips & Tricks</li>
-              <li className="item-menu">Contacts</li>
+              <li className="item-menu">
+                <Link className="line" to="/">
+                  Recipes
+                </Link>
+              </li>
+              <li className="item-menu">
+                <Link className="line" to="/healthy-eating">
+                  Tips &amp; Tricks
+                </Link>
+              </li>
+              <li className="item-menu">
+                <Link className="line" to="/about">
+                  About
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

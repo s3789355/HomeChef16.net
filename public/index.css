@@ -779,7 +779,7 @@ body {
     margin-top: 10px;
   }
   .text-full{
-    width: 80%;
+    width: 75.3%;
   }
 
   .main {
@@ -952,4 +952,9 @@ body {
 
   .font-17{
     font-size: 17px;
+  }
+
+  .line{
+    text-decoration: none;
+    color: black;
   }
