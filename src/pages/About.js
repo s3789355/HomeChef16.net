@@ -71,8 +71,8 @@ const Home = () => {
         )}
 
         <header className="hero-image-header-login" id="head-container">
-          <img className="image-54-icon" alt="berry" src="./img/image-54.svg" />
-          <img className="vector-icon1" alt src="./img/vector1.svg" />
+       
+          
        
    
           <div className="header-div" id="nav-bar">
@@ -144,16 +144,7 @@ const Home = () => {
           alt="mulberry"
           src="./img/mulberry.svg"
         />
-        <img
-          className="strawberry-icon"
-          alt="strawberry"
-          src="./img/strawberry.svg"
-        />
-        <img
-          className="blueberry-icon"
-          alt="blueberry"
-          src="./img/blueberry.svg"
-        />  
+     
       </div>
       <Footer />
     </>
