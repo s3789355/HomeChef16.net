@@ -73,11 +73,9 @@ const Home = () => {
         <header className="hero-image-header" id="head-container">
           <img className="image-54-icon" alt="berry" src="./img/image-54.svg" />
           <img className="vector-icon1" alt src="./img/vector1.svg" />
-          <div className="div" id="bg-content">
-            <span>0</span>
-            <span className="span">1</span>
-          </div>
+          
           <img className="bowl-icon" alt="bowl" src="./img/bowl.svg" />
+          
           <div className="header-div" id="nav-bar">
             <span className="recipes-a" onClick={() => setIsShow(true)}>
               Recipes
@@ -92,12 +90,14 @@ const Home = () => {
             </Link>
 
             <Link className="login-a" to="/about">
-              About
+              Login
             </Link>
             <Link className="button-a" to="/contact">
               <div className="bg-div" />
               <div className="contact-us-div">Contact Us</div>
             </Link>
+            
+            
           </div>
           <img className="content-icon" alt src="./img/content.svg" />
           <p className="title-home-f">HOMECHEF16.NET</p>
