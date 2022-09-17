@@ -10,13 +10,10 @@ const Footer = () => {
           </b>
           <p className="follow-us-p">Follow us</p>
           <p className="email-address-required">Email address (required)</p>
-          <img
-            className="rectangle-icon12"
-            alt
-            src="./img/rectangle-1838.svg"
-          />
+      
 
-          <div className="sign-up-b btn-sign-in">Sign up</div>
+          <div className="sign-up-b" >Sign up</div>
+          
           <input
             className="your-email-address"
             type="text"
@@ -45,19 +42,15 @@ const Footer = () => {
           />
           <strong className="send-feedback-privacy-policy">
             <p className="send-feedback-p">Send feedback</p>
+            <p className="send-feedback-p">&nbsp;</p>
             <p className="send-feedback-p">Privacy Policy</p>
-            <p className="send-feedback-p" />
+            <p className="send-feedback-p">&nbsp;</p>
             <p className="send-feedback-p">User Agreement</p>
             <p className="send-feedback-p">&nbsp;</p>
             <p className="accessibility-statement-p">Accessibility Statement</p>
           </strong>
-          <a className="rectangle-a" href="#appstore" />
-          <a className="rectangle-a1" href="#googleplay" />
-          <img
-            className="content-icon1"
-            alt="content"
-            src="./img/content1.svg"
-          />
+          
+         
           <h1 className="homechef16net-h1" id="footer-title">
             HOMECHEF16.NET
           </h1>

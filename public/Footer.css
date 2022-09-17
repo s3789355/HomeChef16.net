@@ -24,7 +24,7 @@ body {
   .follow-us-p,
   .get-the-homechef16net-newslet {
     position: absolute;
-    left: 65px;
+    left: 5%;
     letter-spacing: 0.02em;
     line-height: 22px;
     display: inline-block;
@@ -36,6 +36,7 @@ body {
   .email-address-required,
   .follow-us-p {
     margin: 0;
+    left: 5%;
   }
   .follow-us-p {
     top: 472px;
@@ -47,41 +48,45 @@ body {
   }
   .rectangle-icon12,
   .rectangle-icon13 {
-    position: absolute;
-    top: 345px;
-    left: 65px;
+    font-size: 20px;
+    display: block;
+    left: 5%;
+    
+   
+  
+    border: 1px solid #000;
+    background-color: #fffefe;
+    position: relative;
     border-radius: 10px;
-    width: 418px;
-    height: 49px;
+    box-sizing: border-box;
+    width: 30%;
+    height: 6%;
+    top: 50%;
   }
   .rectangle-icon13 {
     left: 501px;
     width: 132px;
   }
-  .sign-up-b,
-  .your-email-address {
+  .sign-up-b {
     position: absolute;
-    top: 359px;
-    left: 517px;
+    top: 51%;
+    left: 27%;
     letter-spacing: 0.02em;
-    line-height: 22px;
+   
     display: inline-block;
   }
-  .btn-sign-in{
-    background-color: #D76262;
-    padding: 12px;
-    transform: translateY(-13px);
-    border-radius: 10px;
-    font-weight: bold;
-  }
+ 
   .your-email-address {
-    border: 0;
-    background-color: transparent;
-    left: 83px;
-    font-size: 16px;
-    font-family: Montserrat;
-    color: #4f4444;
-    text-align: left;
+    border: 1px solid #000;
+    background-color: #fffefe;
+    position: absolute;
+    top: calc(50%);
+    margin-left: 5%;
+    
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 7%;
   }
   .outlinebrandsfacebook-icon,
   .outlinebrandsinstagram-icon {
@@ -117,33 +122,17 @@ body {
   }
   .send-feedback-privacy-policy {
     position: absolute;
-    top: 431px;
-    left: 1252px;
+    top: 45%;
+    left: 80%;
     text-decoration: underline;
     letter-spacing: 0.02em;
+    padding: 30px;
     line-height: 22px;
     font-weight: 700;
     text-align: right;
     display: inline-block;
   }
-  .rectangle-a,
-  .rectangle-a1 {
-    text-decoration: none;
-    position: absolute;
-    top: 298px;
-    left: 1158px;
-    border-radius: 20px;
-    width: 196px;
-    height: 56px;
-    background-image: url(./img/rectangle-1840@3x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-  }
-  .rectangle-a1 {
-    left: 1364px;
-    background-image: url(./img/rectangle-1841@3x.png);
-  }
+
   .content-icon1 {
     position: absolute;
     top: 85px;
@@ -153,19 +142,17 @@ body {
   }
   .homechef16net-h1 {
     margin: 0;
-    font-weight: 700;
+    
     position: absolute;
-    top: 161px;
-    left: 71px;
-    font-size: 60px;
-    letter-spacing: 0.02em;
-    line-height: 22px;
+    top: 25%;
+    left: 5%;
+    font-size: 200%;
+   
     font-family: inherit;
     color: #000;
     display: flex;
     align-items: center;
-    width: 757px;
-    height: 74px;
+   
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke: 3px #fff;
   }
